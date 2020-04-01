@@ -4,10 +4,15 @@ def using_concat(my_favorite_things, more_favs)
    @all_my_favs = @my_favorite_things.concat(more_favs)
  end
 
-  def using_insert(list_of_esoteric_programming_languages, another_esoteric_language)
-   @list_of_esoteric_programming_languages = ["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Ook!"]
-   @another_esoteric_language = "Malbolge"
-   @new_array = @list_of_esoteric_programming_languages.insert(4, @another_esoteric_language)
+  def using_insert(list_of_programming_languages, another_language)
+   @list_of_programming_languages = ["Ruby", "JavaScript", "Java", "C#", "Objective C", "C++", "PHP"]
+   @another_esoteric_language = "Python"
+   @new_array = @list_of_programming_languages.insert(4, @another_language)
+   #describe "using_insert" do
+     #before(:each) do
+       #@list_of_programming_languages = ["Ruby", "JavaScript", "Java", "C#", "Objective C", "C++", "PHP"]
+       #@another_language = "Python"
+       #@new_array = using_insert(@list_of_programming_languages, @another_language)
  end
 
   def using_uniq(haircuts)
